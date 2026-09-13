@@ -42,6 +42,7 @@ public class TicTacToe {
             } else {
                 board[row][column] = 'O';
             }
+            //see if there's a winner
             Status statusOfGame = gameStatus();
             if(statusOfGame == Status.WIN) {
                 if(firstPlayer) {
